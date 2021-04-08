@@ -1,6 +1,6 @@
 # Project Name
 
-Accessibility
+A/V Accessibility Research Project
 
 ## Installation
 
