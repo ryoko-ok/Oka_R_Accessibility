@@ -52,9 +52,12 @@
 
 
     // Video ---------------------------------
+
   let playVideoButton = document.querySelector('.playVideoButton'),
       pauseVideoButton = document.querySelector('.pauseVideoButton'),
       rwVideoButton = document.querySelector('.rwVideoButton');
+      videoElement = document.querySelector('video');
+
 
       let videoSource = this.dataset.videoref;
   

@@ -11,6 +11,8 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
   padding: 20px;
+  font-family: 'Helvetica', sans-serif;
+
 }
 
 @keyframes gradient {
@@ -30,6 +32,7 @@ h2 {
 	font-weight: bold;
 	padding: 20px 0;
 	line-height: 2.5rem;
+  color: white;
 }
 
 h3 {
@@ -53,7 +56,6 @@ p {
 button {
   cursor: pointer;
 }
-
 
 .mainheader {
   height: auto;
@@ -84,10 +86,14 @@ button {
 }
 
 .content {
-  width: 30%;
-  padding: 50px 10px;
-  float: left;
+  background-color: black;
+  width: 29%;
+  padding: 15px;
+  float: center;
   text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content img, video {
