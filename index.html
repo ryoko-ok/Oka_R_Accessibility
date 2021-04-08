@@ -18,39 +18,18 @@
 
     <main>
         <section class="container">
-            <h2></h2>
-            <div class="content">
-                <h2>Movie</h2>
-                <video src="video/CRUELLAOfficialTrailer.mp4"></video>
-                <div class="controllers">
-                    <button onclick="playVideobutton" data-videoref="CRUELLAOfficialTrailer">play</button>
-                    <button onclick="pauseVideoButton">pause</button>
-                    <button onclick="rwVideoButton">rewind</button>
-                </div>
-            </div>
+            <figure id="videoPlayer">
+                <video class="mainvideo" id="video" controls autoplay roop>
+                    <source  src="video/movie60sTiffany.mp4" type="video/mp4">
+                </video>
 
-            <div class="content">
-                <h2>TV</h2>
-                <video src="video/SesameStreet_ StarfishArtShow.mp4"></video>
-                <div class="controllers">
-                    <button onclick="playVideoButton" data-videoref="CRUELLAOfficialTrailer">play</button>
-                    <button onclick="pauseVideoButton">pause</button>
-                    <button onclick="rwVideoButton">rewind</button>
-                </div>
-            </div>
-
-            <div class="content">
-                <audio src=""></audio>
-                <h2>Music</h2>
-                <img src="images/366daysMaoriKinjo.png" alt="366 days">
-                <div class="controllers">
-                    <button class="playButton" data-trackref="366daysCoveredByMaoriKinjo">play</button>
-                    <button class="pauseButton">pause</button>
-                    <button class="rwButton">rewind</button>
-                </div>
-            </div>
+                <figcaption class="playlist">
+                    <a href="video/movie60sTiffany.mp4"><button class="moviebtn"><i class="fas fa-tv"></i></button></a>
+                    <a href="video/tv90sDharmaandgreg.mp4"><button class="tvbtn"><i class="fas fa-film"></i></button></a>
+                    <a href="audio/music50sIwannabelovedbyyou.mp3"><button class="audiobtn"><i class="fas fa-music"></i></button></a>
+                </figcaption>
+            </figure>
         </section>
-        
     </main>
 
     <footer class="mainfooter">

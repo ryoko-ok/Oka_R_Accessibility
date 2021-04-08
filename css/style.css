@@ -12,7 +12,7 @@ body {
 	animation: gradient 10s ease infinite;
   padding: 20px;
   font-family: 'Helvetica', sans-serif;
-
+  text-align: center;
 }
 
 @keyframes gradient {
@@ -53,10 +53,6 @@ p {
   font-size: 80px;
 }
 
-button {
-  cursor: pointer;
-}
-
 .mainheader {
   height: auto;
   opacity: 50%;
@@ -76,18 +72,80 @@ button {
 }
 
 .container {
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
-	align-items: center;
-	color: #656565;
-	display: flex;
-	flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+}
+
+#videoPlayer {
+  width: 100%;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+video {
+  cursor: pointer;
+}
+
+.playlist {
+  display: flex;
+}
+
+.playlist video {
+  width: 100%;
+}
+
+.moviebtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #f25287;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.tvbtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #01c5c4;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+
+}
+
+.audiobtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #ffe268;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+
+}
+
+button :hover {
+  opacity: 50%;
+  color: gray;
 }
 
 .content {
   background-color: black;
-  width: 29%;
+  width: 30%;
   padding: 15px;
   float: center;
   text-align: center;
@@ -96,28 +154,6 @@ button {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.content img, video {
-  width: 100%;
-  height: auto;
-}
-
-.content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-button {
-  /* display: block; */
-  font-size: 18px;
-  padding: 10px;
-  color: white;
-  background-color: pink;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
 
 .controllers {
   display: block;
@@ -127,10 +163,10 @@ button {
 
 
 footer {
+  padding-top: 50px;
     font-family: 'Helvetica', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 10px;
     align-items: center;   
 }
 
