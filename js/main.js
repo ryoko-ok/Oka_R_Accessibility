@@ -52,54 +52,37 @@
 
 
     // Video ---------------------------------
-    // const playVButtons = document.querySelectorAll('.playVButton'),
-    //         pauseVButtons = document.querySelectorAll('.pauseVButton')
-    //         rwVButtons = document.querySelectorAll('.rwVButton'),
-    //         videoElement = document.querySelector('video');
+  let playVideoButton = document.querySelector('.playVideoButton'),
+      pauseVideoButton = document.querySelector('.pauseVideoButton'),
+      rwVideoButton = document.querySelector('.rwVideoButton');
 
-    // let globalPaused = false;
+      let videoSource = this.dataset.videoref;
+  
+      // set the video source
+      videoElement.src = `video/${videoSource}.mp4`;
 
-    // function playVideo() {
-    //     // try to fix pause play //
-    //     // a return statement kills your code execution here - don't go past this point
-    //     if (globalPaused) {
-    //       console.log('paused');
-    //       // if our audio is paused, then just play te track and exit
-    //       resumeVideo();
-    //       return;
-    //     }
-    
-    //     //debugger;
-    //     let videoSource = this.dataset.videoref;
-    
-    //     // set the video source
-    //     videoElement.src = `video/${videoSource}.mp4`;
-    
-    //     // load and play it
-    //     videoElement.load();
-    //     videoElement.play();
-    //     //playTrack();
-    //   }
-    
-    //   function resumeVideo() {
-    //     globalPaused = false;
-    //     videoElement.play();
-    //   }
-    
-    //   function pauseVideo() {
-    //     videoElement.pause();
-    //     globalPaused = true;
-    //   }
-    
-    //   function rwVideo() {
-    //     videoElement.currentTime = 0;
-    //   }
-    
-    
-    //   // process the playButtons and add some event handling
-    //   playVButtons.forEach(button => button.addEventListener("click", playVideo));
-    //   pauseVButtons.forEach(button => button.addEventListener("click", pauseVideo));
-    //   rwVButtons.forEach(button => button.addEventListener("click", rwVideo));
+      // load the lightbox video when it opens
+      videoElement.load();
+      // play the lightbox video when it opens
+      VideoElement.play();
 
+      function playVideo() {
+        VideoElement.play();
+    }
+  
+    function pauseVideo() {
+        VideoElement.pause();
+    }
+  
+    function rwVideo() {
+      VideoElement.currentTime = 0;
+    }
+
+    playVideoButton.addEventListener("click", playVideo);
+
+    pauseVideoButton.addEventListener("click", pauseVideo);
+
+    rwVideoButton.addEventListener("click", rwVideo);
+  
   })();
   

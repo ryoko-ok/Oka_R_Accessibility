@@ -7,7 +7,6 @@
 body {
   color: White;
   height: 100vh;
-  font-family: 'Helvetica', sans-serif;
   background: linear-gradient(-45deg, #dddddd, #f9f3f3, #f7d9d9, #f25287);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
