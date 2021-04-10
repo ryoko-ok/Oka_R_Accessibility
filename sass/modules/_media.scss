@@ -1,0 +1,109 @@
+#mediaPlayer {
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  video {
+    cursor: pointer;
+  }
+  
+  .movielist {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+  .tvlist {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+  }
+
+  .musiclist {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+  }
+  
+  
+  .moviebtn {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f25287;
+    color: white;
+    border: none;
+  }
+  
+  .tvbtn {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #01c5c4;
+    color: white;
+    border: none;
+  
+  }
+  
+  .audiobtn {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #ffe268;
+    color: white;
+    border: none;
+  
+  }
+
+  
+  .content {
+    background-color: black;
+    width: 30%;
+    padding: 15px;
+    float: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  .controllers {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  
+  .movielist, .tvlist, .musiclist {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    
+    
+    img {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+
+    p {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 60px;
+        display: table-cell;
+    }
+  }

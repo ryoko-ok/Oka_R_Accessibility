@@ -1,0 +1,88 @@
+
+.mainheader {
+    height: auto;
+    background-color: #f1f3f8;
+    opacity: 50%;
+    color: #393b44;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+}
+
+.logoHeader {
+    float: left;
+    text-align: center;  
+	width: 30px;
+	height: auto;
+	margin: 10px 0px 0px 20px;
+}
+
+#mainNav ul li a {
+	font-size: 18px;
+    margin-top: 10px;
+	padding: 0 5px;
+}
+    
+nav { 
+    float: right;    
+    .nav-item { 
+        margin-top: 10px;
+        margin-right: 20px;
+        height: 50px;
+        display: inline-block; 
+        color: #393b44;
+
+        i {
+            width: 30px;
+            font-size: 40px;
+        }
+
+        a { 
+            text-decoration: none; 
+            display: block;
+            color: #393b44;
+            font-size: 20px;
+            cursor: pointer;
+
+            &.active {
+                color: #393b44; 
+                border-radius: 5%;
+            }
+
+            &:hover {
+                background-color: #393b44;
+                color: white;
+                padding: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .navbtn {
+        background-color: #393b44;
+        color: white;
+        float: right;
+        border-radius: 3px;
+        padding: 5px 10px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        border: 0px;
+    
+        a {
+            text-decoration: none;
+            color: white;
+    
+            &:visited {
+                text-decoration: none;
+            }
+    
+            &:hover {
+                opacity: 50%;
+        }
+    
+        }
+    }
+    
+
+}
+
+
