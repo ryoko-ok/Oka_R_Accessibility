@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+    .title {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        height: 80vh;
+        text-align: center;
+      }
+
+      #mediaPlayer {
+        margin: 0 10px;
+        padding: 40px;
+      }
+
+      .playlist {
+        padding: 20px;
+      }
+}

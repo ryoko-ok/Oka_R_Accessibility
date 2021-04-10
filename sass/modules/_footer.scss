@@ -1,0 +1,44 @@
+footer {
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+
+    p {
+        color: #8d93ab;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .mainfooter {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #393b44;
+        color: white;
+        text-align: center;
+    }
+
+    .sns {
+        text-align: center;
+
+        img {
+            background-color: #393b44;
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            opacity: 50%;
+
+            &:hover {
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+            }
+        }
+
+}
+    
+
+}

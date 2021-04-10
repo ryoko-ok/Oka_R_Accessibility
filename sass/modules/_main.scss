@@ -1,0 +1,147 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    height: 100vh;
+    background: linear-gradient(-45deg, #f1f3f8, #d6e0f0, #8d93ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h2 {
+	font-weight: bold;
+	padding: 20px 0;
+	line-height: 2.5rem;
+    color: white;
+}
+
+h3 {
+	font-weight: bold;
+	padding: 20px 0;
+	line-height: 2rem;
+}
+
+p {
+	font-weight: lighter;
+	line-height: 1.6rem;
+}
+
+.title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 80vh;
+  text-align: center;
+}
+
+#mediaPlayer {
+  width: 100%;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+video {
+  cursor: pointer;
+}
+
+.playlist {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+
+.playlist video {
+  width: 100%;
+}
+
+.moviebtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #f25287;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.tvbtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #01c5c4;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+
+}
+
+.audiobtn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #ffe268;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  border: none;
+
+}
+
+button :hover {
+  opacity: 50%;
+  color: gray;
+}
+
+.content {
+  background-color: black;
+  width: 30%;
+  padding: 15px;
+  float: center;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.controllers {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+}
+
+
+footer {
+  padding-top: 50px;
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+

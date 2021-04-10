@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing:border-box; */
+}
+
+.hidden {
+    display: none;
+  }
+  
+$main-color: #393b44;
+$main-font-size: 1.2rem;
+$heading-color: rgba(255, 255, 255, 0.5);
+
+// quick reset
+* {
+    border: none;
+}
