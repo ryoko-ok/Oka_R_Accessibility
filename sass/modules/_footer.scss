@@ -1,6 +1,5 @@
 footer {
     font-family: 'Helvetica', sans-serif;
-    display: flex;
     flex-direction: column;
     padding-top: 50px;
     align-items: center;
@@ -12,9 +11,7 @@ footer {
     }
 
     .mainfooter {
-        position: fixed;
         left: 0;
-        bottom: 0;
         width: 100%;
         background-color: #393b44;
         color: white;

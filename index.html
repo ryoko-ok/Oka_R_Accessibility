@@ -13,6 +13,9 @@
 </head>
 <body>
     <header>
+        <button onclick="topFunction()" id="backtotop" title="Go to top"><i class='fas fa-angle-up' style='font-size:30px'></i>
+        </button>
+
         <h1 class="hidden">Media Player</h1>
 
         <!-- navigation bar-->
@@ -20,9 +23,9 @@
             <nav id="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <li class="nav-item"><a class="active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="Kids.html">Kids</a></li>
-                    <li class="nav-item"><a href="index.html">Closed Kids</a></li>
+                    <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li class="nav-item"><a href="Kids.html"><i class="fas fa-smile"></i></a></li>
+                    <li class="nav-item"><a href="index.html">Close Kids</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,17 +38,30 @@
                 <img src="images/mediaplayer.svg" alt="Media Player title logo">
             </div>
 
-            <figure id="mediaPlayer">
+            <div id="mediaPlayer">
                 <video class="mainvideo" id="video" controls muted autoplay roop>
                     <source src="video/movie60sTiffany.mp4" type="video/mp4">
                 </video>
+            </div> 
 
-                <figcaption class="playlist">
-                    <a href="video/movie60sTiffany.mp4"><button class="moviebtn"><i class="fas fa-tv"></i></button></a>
-                    <a href="video/tv90sDharmaandgreg.mp4"><button class="tvbtn"><i class="fas fa-film"></i></button></a>
-                    <a href="audio/music50sIwannabelovedbyyou.mp3"><button class="audiobtn"><i class="fas fa-music"></i></button></a>
-                </figcaption>
-            </figure>
+            <div class="movielist">
+                    <p class="moviebtn"><br><br><i class="fas fa-film"></i></p>
+                    <img src="images/movie_tiffany.jpg" onclick="playVideo(1)"><a href="video/movie60sTiffany.mp4"></a></img>
+                    <img src="images/movie_tiffany.jpg" onclick="playVideo(1)"><a href="video/movie60sTiffany.mp4"></a></img>
+                </div>
+
+            <div class="tvlist">
+                <p class="tvbtn"><br><br><i class="fas fa-tv"></i></p>
+                <img src="images/tv_dharma-and-greg.jpeg" onclick="playVideo(2)"><a href="video/tv90sDharmaandgreg.mp4"></a></img>
+                <img src="images/tv_dharma-and-greg.jpeg" onclick="playVideo(2)"><a href="video/tv90sDharmaandgreg.mp4"></a></img>
+            </div>
+
+            <div class="musiclist">
+                <p class="audiobtn"><br><br><i class="fas fa-music"></i></p>
+                <img src="images/music50sIwannabe.jpg" onclick="playVideo(3)"><a href="audio/music50sIwannabelovedbyyou.mp3"></a></img>
+                <img src="images/music50sIwannabe.jpg" onclick="playVideo(3)"><a href="audio/music50sIwannabelovedbyyou.mp3"></a></img>
+            </div>
+
         </section>
     </main>
 
@@ -62,5 +78,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </body>
 </html>
