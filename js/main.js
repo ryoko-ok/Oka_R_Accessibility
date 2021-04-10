@@ -14,6 +14,10 @@ function playVideo(num) {
     }
 }
 
+
+
+// back to top-----------------------------------------------
+
 var mybutton = document.getElementById("backtotop");
         
 // When the user scrolls down 20px from the top of the document, show the button
